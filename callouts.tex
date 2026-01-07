@@ -1,0 +1,46 @@
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+
+% базовый стиль
+\newtcolorbox{calloutbox}[2]{ % #1=тип, #2=заголовок
+  enhanced,
+  breakable,
+  colback=black!2,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=2mm,right=2mm,top=1.2mm,bottom=1.2mm,
+  title={#2},
+  fonttitle=\bfseries,
+}
+
+% типы (можно расширять)
+\newcommand{\CalloutColor}[1]{%
+  \def\callouttype{#1}%
+  \ifx\callouttype\empty\relax\fi
+}
+
+% Хелперы под разные типы
+\newtcolorbox{calloutnote}[1]{calloutbox{note}{#1}}
+\newtcolorbox{calloutinfo}[1]{calloutbox{info}{#1}}
+\newtcolorbox{calloutwarning}[1]{
+  enhanced, breakable,
+  colback=yellow!7,
+  colframe=yellow!45!black,
+  boxrule=0.8pt,
+  arc=2mm,
+  left=2mm,right=2mm,top=1.2mm,bottom=1.2mm,
+  title={#1},
+  fonttitle=\bfseries,
+}
+\newtcolorbox{callouttip}[1]{
+  enhanced, breakable,
+  colback=green!6,
+  colframe=green!45!black,
+  boxrule=0.8pt,
+  arc=2mm,
+  left=2mm,right=2mm,top=1.2mm,bottom=1.2mm,
+  title={#1},
+  fonttitle=\bfseries,
+}
+

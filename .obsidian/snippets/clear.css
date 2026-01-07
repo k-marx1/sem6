@@ -1,0 +1,28 @@
+/* ===== Блок-разрыв обтекания: > [!clear] ===== */
+
+/* сам callout-брейкер */
+.callout[data-callout="clear"]{
+  float: none !important;
+  clear: both !important;
+  display: block !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* скрываем внутренности */
+.callout[data-callout="clear"] .callout-title,
+.callout[data-callout="clear"] .callout-content{
+  display: none !important;
+}
+
+/* ✅ главное: в Live Preview очищаем ОБЁРТКУ СТРОКИ, где стоит callout */
+.markdown-source-view.mod-cm6 .cm-line:has(.callout[data-callout="clear"]),
+.markdown-source-view.mod-cm6 .cm-content > div:has(.callout[data-callout="clear"]) {
+  clear: both !important;
+}
+

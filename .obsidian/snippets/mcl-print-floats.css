@@ -1,0 +1,42 @@
+@media print {
+  /* Иногда контейнеры в печати "режут" float */
+  .markdown-rendered,
+  .markdown-rendered .markdown-preview-section,
+  .markdown-rendered .markdown-reading-view {
+    overflow: visible !important;
+  }
+
+  /* На случай если тема в print делает callout "не тем" display */
+  .markdown-rendered .callout {
+    display: block !important;
+  }
+
+  /* ===== FLOAT RIGHT / LEFT (ловим float-right, float-right-medium и т.п.) ===== */
+  .markdown-rendered .callout[data-callout-metadata*="float-right"],
+  .markdown-rendered .callout[data-callout-metadata*="right"] {
+    float: right !important;
+    clear: none !important;
+    max-width: 45% !important;
+    margin: 0 0 1em 1em !important;
+  }
+
+  .markdown-rendered .callout[data-callout-metadata*="float-left"],
+  .markdown-rendered .callout[data-callout-metadata*="left"] {
+    float: left !important;
+    clear: none !important;
+    max-width: 45% !important;
+    margin: 0 1em 1em 0 !important;
+  }
+
+  /* ===== Пресеты ширины (small/medium/large) ===== */
+  .markdown-rendered .callout[data-callout-metadata*="small"]  { width: 240px !important; }
+  .markdown-rendered .callout[data-callout-metadata*="medium"] { width: 320px !important; }
+  .markdown-rendered .callout[data-callout-metadata*="large"]  { width: 420px !important; }
+
+  /* Чтобы внутри колаута не было странных переносов/разрывов в печати */
+  .markdown-rendered .callout {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
+

@@ -1,1 +1,21 @@
-{}
+{
+  "baseFontSize": 20,
+  "enabledCssSnippets": [
+    "theme",
+    "snippets",
+    "MCL Gallery Cards",
+    "MCL Multi Column",
+    "MCL Wide Views",
+    "mcl-float-callout-print",
+    "callout-figure",
+    "callout-center",
+    "justify-all-paragraphs",
+    "callouts",
+    "figure",
+    "clear",
+    "mcl-print-floats"
+  ],
+  "cssTheme": "Minimal",
+  "theme": "moonstone",
+  "accentColor": "#5d7000"
+}

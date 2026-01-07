@@ -1,0 +1,48 @@
+/* === CALLOUT "figure": без заливки/контура/иконки + центр/курсив подписи === */
+
+/* Убираем фон, рамку, тени */
+.callout[data-callout="figure"] {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Убираем заголовок целиком (вместе с иконкой) */
+.callout[data-callout="figure"] .callout-title {
+  display: none !important;
+}
+
+/* Контент без внутренней заливки/разметки темы */
+.callout[data-callout="figure"] .callout-content {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Картинка аккуратно */
+.callout[data-callout="figure"] .callout-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto !important; /* центрируем картинку */
+  border-radius: 0;          /* если не нужно скругление */
+}
+
+/* Подпись: последняя строка/абзац внутри колаута */
+.callout[data-callout="figure"] .callout-content p:last-child {
+  text-align: center !important;
+  font-style: italic !important;
+  font-size: 0.9em;
+  opacity: 0.85;
+  margin-top: 0.35em !important;
+}
+
+/* Если подпись оформляешь отдельным div-ом */
+.callout[data-callout="figure"] .callout-content .figure-caption {
+  text-align: center !important;
+  font-style: italic !important;
+  font-size: 0.9em;
+  opacity: 0.85;
+  margin-top: 0.35em !important;
+}
+
