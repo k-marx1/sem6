@@ -3,7 +3,6 @@
 .obsidian/graph.json
 .obsidian/sync.json
 .obsidian/publish.json
-.obsidian/plugins/
 
 *.pdf
 *.log
