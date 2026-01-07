@@ -1,0 +1,13 @@
+{
+  "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-rosepine-light",
+  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-simplicity-topaz",
+  "shimmering-focus@@alt-colorschemes": "colorscheme-coffee",
+  "anuppuccin-theme-settings@@anuppuccin-light-theme-accents": "ctp-accent-light-red",
+  "anuppuccin-theme-settings@@anuppuccin-accent-toggle": true,
+  "anuppuccin-theme-settings-extended@@anp-theme-ext-light": true,
+  "anuppuccin-theme-settings-extended@@catppuccin-theme-extended": "ctp-atom-light",
+  "solarized-theme-settings@@disable-active-line-highlight": false,
+  "power-callouts@@brutal": true,
+  "power-callouts@@soft": false,
+  "chime-theme@@callout-style": "callout-floating"
+}
