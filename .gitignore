@@ -1,6 +1,7 @@
 .obsidian/workspace*
 .obsidian/cache/
 .obsidian/graph.json
+.obsidian/plugins/
 .obsidian/sync.json
 .obsidian/publish.json
 
