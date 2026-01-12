@@ -118,6 +118,11 @@ settings:
   --callout-icon: sigma;     /* иконка */
 }
 
+.callout[data-callout="definition"] {
+  --callout-color: 0, 69, 181;   /* RGB */
+  --callout-icon: book-a;     /* иконка */
+}
+
 /* callout highlight */
 body.snippet-highlight .callout {
   border-left: 6px solid #4da6ff;
